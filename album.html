@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know.me - Álbum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assets/Know.me-logo.png" alt="Know.me logo" id="logo"></a>
+        <div id="search">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button"><img src="./assets/2.svg" alt="Search Icon"></button>
+        </div>
+        <nav class="links">
+            <a href="notificacoes.html">Notificações</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="album-header">
+            <h1 id="album-name">Nome do Álbum</h1>
+            <h3 id="profile-username">@usuário</h3>
+            <button id="add-picture-button">Adicionar Imagem</button>
+        </div>
+
+        <div id="album-pictures">
+            <!-- Example of picture in the album -->
+            <div class="picture-cover">
+                <img src="image1.png" alt="Image" class="picture">
+                <p class="picture-name">Nome da Imagem</p>
+            </div>
+            <!-- Add more pictures as needed -->
+        </div>
+    </main>
+
+    <!-- Modal for adding new pictures -->
+    <div id="new-picture-modal" style="display:none;">
+        <form action="#" method="POST" enctype="multipart/form-data" id="new-picture-form">
+            <div class="form-group">
+                <label for="new-picture-name">Nome da Imagem</label>
+                <input type="text" id="new-picture-name" required>
+            </div>
+            <div class="form-group">
+                <label for="new-picture">Adicionar Imagem</label>
+                <input type="file" id="new-picture" required>
+            </div>
+            <div class="form-group">
+                <label for="new-picture-description">Descrição</label>
+                <input type="text" id="new-picture-description">
+            </div>
+            <div id="form-buttons">
+                <button type="button" id="cancel-picture" onclick="closeModal()">Cancelar</button>
+                <button type="submit" id="insert-picture">Inserir</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>All rights reserved © Know.me</p>
+    </footer>
+
+    <script src="script-album.js"></script>
+</body>
+</html>

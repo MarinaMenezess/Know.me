@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know.me - Home</title>
+    <link rel="icon" type="image/png" href="./assets/Know.me-icon.png"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assets/Know.me-logo.png" alt="Know.me logo" id="logo"></a>
+        <div id="search">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button"><img src="./assets/2.svg" alt="Search Icon"></button>
+        </div>
+        <nav class="links">
+            <a href="notificacoes.html">Notificações</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="friends-section">
+            <h1 class="section-name">Amigos</h1>
+            <div class="albums-grid">
+                <a href="album.html" class="album-cover">
+                    <img src="album1.png" alt="Album cover" class="album-image">
+                    <p>@username</p>
+                </a>
+                <!-- Repetir estrutura para mais álbuns -->
+            </div>
+        </div>
+
+        <div id="for-you-section">
+            <h1 class="section-name">Para você</h1>
+            <div class="albums-grid">
+                <a href="album.html" class="album-cover">
+                    <img src="album2.png" alt="Album cover" class="album-image">
+                    <p>@username</p>
+                </a>
+                <!-- Repetir estrutura para mais álbuns sugeridos -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved © Know.me</p>
+    </footer>
+</body>
+</html>

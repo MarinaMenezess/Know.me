@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know.me - Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assets/Know.me-logo.png" alt="Know.me logo" id="logo"></a>
+        <div id="search">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button"><img src="./assets/2.svg" alt="Search Icon"></button>
+        </div>
+        <nav class="links">
+            <a href="notificacoes.html">Notificações</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="profile-info">
+            <div id="basic-profile-info">
+                <img src="user-placeholder.png" alt="Profile Picture" id="profile-picture">
+                <div id="main-profile-info">
+                    <h1 id="profile-name">Nome do Usuário</h1>
+                    <p id="profile-username">@username</p>
+                    <button id="edit-profile-button">Editar Perfil</button>
+                </div>
+            </div>
+            <div id="num-profile-info">
+                <p>5 Álbuns</p>
+                <p>0 Amigos</p>
+            </div>
+        </div>
+
+        <section id="my-albums">
+            <h1 class="section-name">Meus Álbuns</h1>
+            <div class="albums-grid">
+                <div class="album-cover add-album">
+                    <a href="#">
+                        <div class="add-icon">+</div>
+                        <p>Adicionar Álbum</p>
+                    </a>
+                </div>
+                <div class="album-cover">
+                    <img src="album-placeholder.png" alt="Album cover" class="album-image">
+                    <p class="album-name">Nome</p>
+                    <p class="album-date">00/00</p>
+                </div>
+                <!-- Repetir estrutura para mais álbuns -->
+            </div>
+        </section>
+
+        <section id="liked-albums">
+            <h1 class="section-name">Álbuns Curtidos</h1>
+            <div class="albums-grid">
+                <div class="album-cover">
+                    <img src="album-placeholder.png" alt="Album cover" class="album-image">
+                    <p class="album-name">Nome</p>
+                    <p class="album-date">00/00</p>
+                </div>
+                <!-- Repetir estrutura para mais álbuns curtidos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved © Know.me</p>
+    </footer>
+</body>
+</html>
